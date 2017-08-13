@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clickable="true">
+
+
+    <!--   <ImageView
+           android:id="@+id/drawerBckImage"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:scaleType="centerCrop"
+           android:src="@drawable/drawer_image" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00555555"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/back_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/navdrawer_bck" />
+
+            <ImageButton
+                android:id="@+id/navDrawerBackButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="?android:selectableItemBackground"
+                android:src="@drawable/ic_arrow_back_white_24dp" />
+            <!--
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/userLocFB"
+                            android:text="User Location"
+                            android:textSize="10dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="25dp"
+                            android:layout_height="wrap_content" />-->
+
+            <!-- <ImageButton
+                 android:id="@+id/back_Button"
+                 android:layout_width="30dp"
+                 android:layout_height="30dp"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginTop="10dp"
+                 android:contentDescription="back Button"
+                 android:src="@drawable/ic_arrow_back_white_24dp"
+                 />
+
+ -->
+            <LinearLayout
+                android:id="@+id/profile_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/back_image"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:paddingRight="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="right"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/drawer_avatar_circular" />
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="login"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/drawerList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="#00555555">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+</RelativeLayout>

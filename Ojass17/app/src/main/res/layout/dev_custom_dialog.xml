@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="43dp"
+        android:id="@+id/dev_image"
+        android:src="@drawable/dev4"
+        android:layout_width="140dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/dev_name"
+        android:layout_width="200dp"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:text="Roushan Kumar"
+        android:layout_toRightOf="@id/dev_image"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/dev_branch"
+        android:layout_width="wrap_content"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:text="Computer Sc. and Engineering"
+        android:layout_below="@+id/dev_name"
+        android:layout_toRightOf="@id/dev_image"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/dev_mob"
+        android:layout_width="wrap_content"
+        android:textColor="#9f0413"
+        android:layout_height="wrap_content"
+        android:text="9155956813"
+        android:layout_below="@+id/dev_branch"
+        android:layout_toRightOf="@id/dev_image"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/dev_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2014ugcs073@nitjsr.ac.in"
+        android:textColor="#000000"
+        android:layout_below="@+id/dev_mob"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/dev_image"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/dev_bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/dev4"
+        android:alpha="0.27"
+        android:scaleType="centerCrop"/>
+
+</RelativeLayout>

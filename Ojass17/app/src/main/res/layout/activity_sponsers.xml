@@ -1,0 +1,75 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="#FABCDE"
+            android:orientation="vertical"
+            android:gravity="center">
+
+                <TextView
+                    android:id="@+id/sponsertv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Major Sponsers"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <GridView
+                    android:id="@+id/gridView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:stretchMode="columnWidth"
+                    android:numColumns="2" >
+                </GridView>
+
+                <TextView
+                    android:id="@+id/sponsertv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Past Sponsers"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <GridView
+                    android:id="@+id/gridView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:numColumns="2" >
+
+                </GridView>
+                <!-- <TextView
+                     android:id="@+id/sponsertv3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                     android:text="Title Sponser"
+                     android:textStyle="bold"
+                     android:textSize="25dp"
+                     android:textColor="#000000"
+                     android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                 <GridView
+                     android:id="@+id/gridView3"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="5dp"
+                     android:layout_centerHorizontal="true"
+                     android:numColumns="1" >
+
+                 </GridView>-->
+
+        </LinearLayout>
+</ScrollView>
